@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #5df3a1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    background: rgb(60, 6, 92);
+    display: flex;
+    color: white;
+    height: 80px;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+h2.nombre_proyecto{
+    margin: 0;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(223, 73, 243);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    border-radius: 30%;
+    height: 100px;
+    margin-right: 20px;
+    margin-top: 20px;
+    
+}
+
+
+.calculadora{
+    background-color: #333;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    
+}
+
+.pantalla {
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    min-height: 70px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Estilos para los botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.boton {
+    background-color: #444;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Botones de operación */
+.operacion {
+    background-color: #8b1096;
+}
+
+/* Botón "grande" para el 0 que ocupa dos columnas */
+.grande {
+    grid-column: span 2;
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+.boton:hover {
+    background-color: #555;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.boton:active {
+    background-color: #666;
+    box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Cambiar colores en botones de operación al hacer hover */
+.operacion:hover {
+    background-color: #5df3a1;
+}
